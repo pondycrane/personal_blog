@@ -78,3 +78,13 @@ export function deletePost(req, res) {
     });
   });
 }
+
+/**
+ * Authenticate post actions
+ * @param req
+ * @param res
+ * @returns void
+ */
+export function authenticatePostAction(req, res) {
+  res.json({ authenticated: req.params.pwd === 'kmt2d' });
+}

@@ -13,6 +13,12 @@ export function addPost(post) {
   };
 }
 
+export function authenticatePostAction(pwd, nextAction, props) {
+  return (dispatch) => {
+    return callApi('authenticatePostAction', `post/:${pwd}`).then(res => (!res.authenticated ? null : dispatch(nextAction(...props))));
+  };
+}
+
 export function addPostRequest(post) {
   return (dispatch) => {
     return callApi('posts', 'post', {
