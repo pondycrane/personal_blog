@@ -15,6 +15,6 @@ router.route('/posts').post(PostController.addPost);
 router.route('/posts/:cuid').delete(PostController.deletePost);
 
 // Authenticate post action
-router.route('/posts/:pwd').delete(PostController.authenticatePostAction);
+router.route('/authenticatePostAction/:pwd').get(PostController.authenticatePostAction);
 
 export default router;
