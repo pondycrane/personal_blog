@@ -2,11 +2,12 @@ import Post from '../models/post';
 import cuid from 'cuid';
 import slug from 'limax';
 import sanitizeHtml from 'sanitize-html';
-let pwd
+import fs from 'fs';
+let pwd;
 try {
-  pwd = require('fs').readFileSync('./pwd.txt', 'utf8').trim();
+  pwd = fs.readFileSync('./pwd.txt', 'utf8').trim();
 } catch (err) {
-  pwd = ''
+  pwd = '';
 }
 
 /**
