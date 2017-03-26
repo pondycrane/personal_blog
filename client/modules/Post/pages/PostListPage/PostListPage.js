@@ -19,12 +19,12 @@ class PostListPage extends Component {
   }
 
   handleDeletePost = post => {
-    const pwd = prompt('Enter password');
+    const pwd = prompt('Enter password'); // eslint-disable-line
     this.props.dispatch(authenticatePostAction(pwd, deletePostRequest, [post]));
   };
 
   handleAddPost = (name, title, content) => {
-    const pwd = prompt('Enter password');
+    const pwd = prompt('Enter password'); // eslint-disable-line
     this.props.dispatch(toggleAddPost());
     this.props.dispatch(authenticatePostAction(pwd, addPostRequest, [{ name, title, content }]));
   };
