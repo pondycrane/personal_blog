@@ -6,7 +6,7 @@ import PostList from '../../components/PostList';
 import PostCreateWidget from '../../components/PostCreateWidget/PostCreateWidget';
 
 // Import Actions
-import { addPostRequest, fetchPosts, deletePostRequest } from '../../PostActions';
+import { addPostRequest, fetchPosts, deletePostRequest, authenticatePostAction } from '../../PostActions';
 import { toggleAddPost } from '../../../App/AppActions';
 
 // Import Selectors
@@ -19,14 +19,14 @@ class PostListPage extends Component {
   }
 
   handleDeletePost = post => {
-    if (confirm('Do you want to delete this post')) { // eslint-disable-line
-      this.props.dispatch(deletePostRequest(post));
-    }
+    const pwd = prompt('Enter password');
+    this.props.dispatch(authenticatePostAction(pwd, deletePostRequest, [post]));
   };
 
   handleAddPost = (name, title, content) => {
+    const pwd = prompt('Enter password');
     this.props.dispatch(toggleAddPost());
-    this.props.dispatch(addPostRequest({ name, title, content }));
+    this.props.dispatch(authenticatePostAction(pwd, addPostRequest, [{ name, title, content }]));
   };
 
   render() {
