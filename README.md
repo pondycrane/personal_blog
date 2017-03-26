@@ -1,5 +1,7 @@
-<<<<<<< HEAD
 ![](http://res.cloudinary.com/hashnode/image/upload/w_200/v1466495663/static_imgs/mern/v2/mernio-logo.png)
+
+## set up authentication password
+Create a file called "pwd.txt" with password inside for creating and deleting posts
 
 # mern-starter
 ![title](https://travis-ci.org/Hashnode/mern-starter.svg?branch=v2.0.0)

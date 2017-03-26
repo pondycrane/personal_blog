@@ -2,6 +2,12 @@ import Post from '../models/post';
 import cuid from 'cuid';
 import slug from 'limax';
 import sanitizeHtml from 'sanitize-html';
+let pwd
+try {
+  pwd = require('fs').readFileSync('./pwd.txt', 'utf8').trim();
+} catch (err) {
+  pwd = ''
+}
 
 /**
  * Get all posts
@@ -86,5 +92,5 @@ export function deletePost(req, res) {
  * @returns void
  */
 export function authenticatePostAction(req, res) {
-  res.json({ authenticated: req.params.pwd === 'kmt2d' });
+  res.json({ authenticated: req.params.pwd === pwd });
 }
