@@ -18,7 +18,6 @@ test('renders properly', t => {
   t.truthy(wrapper.hasClass('single-post'));
   t.is(wrapper.find('Link').first().prop('children'), post.title);
   t.regex(wrapper.find('.author-name').first().text(), new RegExp(post.name));
-  t.is(wrapper.find('.post-desc').first().text(), post.content);
 });
 
 test('has correct props', t => {
