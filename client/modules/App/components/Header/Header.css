@@ -41,7 +41,7 @@
   list-style: none;
   width: 980px;
   margin: auto;
-  text-align: right;
+  text-align: left;
 }
 
 .language-switcher li {
@@ -50,10 +50,6 @@
   padding: 5px;
   cursor: pointer;
   color: #fff;
-}
-
-.language-switcher li:first-child {
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .selected {
