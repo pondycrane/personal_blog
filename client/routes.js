@@ -39,5 +39,13 @@ export default (
         });
       }}
     />
+    <Route
+      path="/about"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/About/About').default);
+        });
+      }}
+    />
   </Route>
 );

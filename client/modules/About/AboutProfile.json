@@ -1,0 +1,43 @@
+{
+	"biography": "Ho-Chih Huang is a Masters Candidate at Carnegie Mellon University, Information System Management Program. He worked at ACT Genomics as a Bioinformatics Engineer for three years. His focus is to improve the system for managing cancer information to offer accurate treatment suggestions to physicians. He also aims to increase system efficiency in hope to lower service cost so more patients can benefit from Precision Medicine. As a blockchain enthusiast, he hopes to contribute to a blockchain-based healthcare system that will help both patients and researchers.",
+	"picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sarus_Crane_%28Grus_antigone%29_at_Sultanpur_I_Picture_151.jpg/220px-Sarus_Crane_%28Grus_antigone%29_at_Sultanpur_I_Picture_151.jpg",
+	"language": [
+		{
+			"name": "Java",
+			"year": 3,
+			"specialty": "Weka Machine Learning"
+		}, 
+		{
+			"name": "Python",
+			"year": 3,
+			"specialty": "Data Analysis"
+		},
+		{
+			"name": "Javascript",
+			"year": 3,
+			"specialty": "React.js, Node.js"
+		}
+	],
+	"projects": [
+		{
+			"name": "Hotspot Chat",
+			"year": "2014",
+			"description": "An Android messaging app that doesn't require the internet",
+			"detail": "The Android application is made from hotspot controlling API",
+			"image": "https://i.imgur.com/iIFxkuV.png"
+		},
+		{ "name": "Simple Blockchain",
+			"year": "2017",
+			"description": "A simple blockchain that provides Proof-of-work",
+			"detail": "The blockchain is able to store simple data and validate itself",
+			"image": "https://imgur.com/NyE3y6F.png"
+		},
+		{
+			"name": "Lunchwhat Lunch Ordering Platform",
+			"year": "2014",
+			"description": "An lunch ordering platform built using Meteor.js",
+			"detail": "A function-packed platform that allows people to store value in the system and purchase lunch boxes",
+			"image": "not yet"
+		}
+	]
+}

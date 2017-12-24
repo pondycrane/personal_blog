@@ -28,6 +28,10 @@ export class App extends Component {
     this.props.dispatch(toggleAddPost());
   };
 
+	fetchAbout = () => {
+		this.props.dispatch(fetchAbout());
+	};
+
   render() {
     return (
       <div>
