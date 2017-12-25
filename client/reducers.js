@@ -14,5 +14,5 @@ export default combineReducers({
   app,
   posts,
   intl,
-	about,
+  about,
 });

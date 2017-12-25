@@ -5,33 +5,34 @@ import { fetchAbout } from './AboutActions';
 import AboutDisplay from './components/AboutDisplay';
 
 class About extends Component {
-	componentDidMount() {
-		this.props.dispatch(fetchAbout());
-	}
+  componentDidMount() {
+    this.props.dispatch(fetchAbout());
+  }
 
-	render() {
-		return (
-			<div className="aboutView">
-				<AboutDisplay about={ this.props.about } />
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="aboutView">
+        <AboutDisplay about={this.props.about} />
+      </div>
+    );
+  }
 }
 
 function mapStateToProps(state) {
-	return {
-		about: getAbout(state),
-	};
+  return {
+    about: getAbout(state),
+  };
 }
 
 About.propTypes = {
-	about: PropTypes.shape({
-		biography: PropTypes.string,
-	}).isRequired,
+  dispatch: PropTypes.func.isRequired,
+  about: PropTypes.shape({
+    biography: PropTypes.string,
+  }).isRequired,
 };
 
 About.contextTypes = {
-	router: React.PropTypes.object,
+  router: React.PropTypes.object,
 };
 
 export default connect(mapStateToProps)(About);
