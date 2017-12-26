@@ -37,7 +37,14 @@
 			"year": "2014",
 			"description": "An lunch ordering platform built using Meteor.js",
 			"detail": "A function-packed platform that allows people to store value in the system and purchase lunch boxes",
-			"image": "not yet"
-		}
+			"image": "https://imgur.com/nYdvsr5.png"
+		},
+    {
+      "name": "Personal Website",
+      "year": "2017",
+      "description": "A web blog and profile website made using MERN stack",
+      "detail": "This is a single webpage applicatin",
+      "image": "https://imgur.com/rJpeSDL.png"
+    }
 	]
 }

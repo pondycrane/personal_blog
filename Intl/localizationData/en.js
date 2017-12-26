@@ -1,10 +1,10 @@
 export default {
   locale: 'en',
   messages: {
-    siteTitle: 'pondycrane Blog',
+    siteTitle: 'pondycrane',
     addPost: 'Add Post',
     switchLanguage: 'Switch Language',
-    twitterMessage: 'We are on Twitter',
+    twitterMessage: 'Twitter',
     by: 'By',
     deletePost: 'Delete Post',
     createNewPost: 'Create new post',
