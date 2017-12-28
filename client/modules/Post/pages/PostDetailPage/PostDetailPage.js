@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
+const ReactMarkdown = require('react-markdown');
 
 // Import Style
 import styles from '../../components/PostListItem/PostListItem.css';
@@ -20,7 +21,7 @@ export function PostDetailPage(props) {
       <div className={`${styles['single-post']} ${styles['post-detail']}`}>
         <h3 className={styles['post-title']}>{props.post.title}</h3>
         <p className={styles['author-name']}><FormattedMessage id="by" /> {props.post.name}</p>
-        <p className={styles['post-desc']}>{props.post.content}</p>
+        <ReactMarkdown className={styles['post-desc']} source={props.post.content} />
       </div>
     </div>
   );
