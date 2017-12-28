@@ -52,13 +52,14 @@ class ProjectDisplay extends Component {
           />
           <CardContent>
             <Typography component="p">
-              {this.props.data.description}
+              {this.props.data.description.concat(' ')}
+              <a href={this.props.data.url} target="_blank">[Link]</a>
             </Typography>
           </CardContent>
           <CardActions disableActionSpacing>
             <IconButton
               className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expand,
+                [classes.expandOpen]: this.state.expanded,
               })}
               onClick={this.handleExpandClick}
               aria-expanded={this.state.expanded}
