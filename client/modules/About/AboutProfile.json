@@ -1,21 +1,21 @@
 {
-	"biography": "Ho-Chih Huang is a Masters Candidate at Carnegie Mellon University, Information System Management Program. He worked at ACT Genomics as a Bioinformatics Engineer for three years. His focus is to improve the system for managing cancer information to offer accurate treatment suggestions to physicians. He also aims to increase system efficiency in hope to lower service cost so more patients can benefit from Precision Medicine. As a blockchain enthusiast, he hopes to contribute to a blockchain-based healthcare system that will help both patients and researchers.",
+	"biography": "I used to be a food scientist, but now I am a software developer. I love to explore new technology that makes an impact, including full-stack web development, cryptocurrencies, and precision medicine. In my free time, I like to listen to podcasts about freedom, philosophy, and politics. The world is changing in an ever increasing pace, and I want to stay ahead the curve. I will be sharing things I am passionate about on this website. First, here is my profile and some things I've accomplished. ",
 	"picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sarus_Crane_%28Grus_antigone%29_at_Sultanpur_I_Picture_151.jpg/220px-Sarus_Crane_%28Grus_antigone%29_at_Sultanpur_I_Picture_151.jpg",
 	"language": [
 		{
 			"name": "Java",
-			"year": 3,
-			"specialty": "Weka Machine Learning"
+			"year": 5,
+			"specialty": "Weka machine learning, Android application development"
 		}, 
 		{
 			"name": "Python",
-			"year": 3,
-			"specialty": "Data Analysis"
+			"year": 4,
+			"specialty": "Data analysis, web crawling, automation"
 		},
 		{
 			"name": "Javascript",
-			"year": 3,
-			"specialty": "React.js, Node.js"
+			"year": 4,
+			"specialty": "Single page web app development, React.js, Node.js"
 		}
 	],
 	"projects": [
@@ -23,28 +23,32 @@
 			"name": "Hotspot Chat",
 			"year": "2014",
 			"description": "An Android messaging app that doesn't require the internet",
-			"detail": "The Android application is made from hotspot controlling API",
-			"image": "https://i.imgur.com/iIFxkuV.png"
+			"detail": "HotspotChat communicates with nearby devices using the wifi names of Android devices. User can send short messages easily without the need of Internet connection. The message is encrypted using symmetrical encryption algorithm so that non-users can't intercept the message with Wifi scan. This application has been used by people in countries like Iraq, Iran, Myanmar, and India where The Internet hasn't been widely available. ",
+      "image": "https://i.imgur.com/iIFxkuV.png",
+      "url": "https://play.google.com/store/apps/details?id=gooday.pondycrane.hotspotchat&hl=en&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dgoogle+play+hotspotchat&pcampaignid=APPU_1_inZEWp6TBIHM0AS1qaPIAg"
 		},
 		{ "name": "Simple Blockchain",
 			"year": "2017",
 			"description": "A simple blockchain that provides Proof-of-work",
-			"detail": "The blockchain is able to store simple data and validate itself",
-			"image": "https://imgur.com/NyE3y6F.png"
+			"detail": "This is a Blockchain demo written in Java. It allows users to store data with certification. If a user is authenticated successfully, the user is able to append a block of data to the blockchain following the proof-of-work in finding a valid hash nonce. User can also validate the blockchain by checking its consistency. This blockchain doesn't include peer-to-peer network, yet. ",
+			"image": "https://imgur.com/NyE3y6F.png",
+      "url": "https://github.com/pondycrane/DS_Project3Task3"
 		},
 		{
 			"name": "Lunchwhat Lunch Ordering Platform",
 			"year": "2014",
-			"description": "An lunch ordering platform built using Meteor.js",
-			"detail": "A function-packed platform that allows people to store value in the system and purchase lunch boxes",
-			"image": "https://imgur.com/nYdvsr5.png"
+			"description": "An lunch order platform built using Meteor.js",
+			"detail": "I built this tool to help my college organize daily lunch order for the whole company. Managing each people's lunch fund has never been easier. Employees can add credit to the MongoDB for lunch order. The app shows the balance of each user and their order history. App administrator can update daily menu to allow other users make orders. Furthermore, the app provides a chat room in case that users have any questions regarding to the menu. ",
+			"image": "https://imgur.com/nYdvsr5.png",
+      "url": "https://github.com/pondycrane/lunchTime"
 		},
     {
       "name": "Personal Website",
       "year": "2017",
       "description": "A web blog and profile website made using MERN stack",
-      "detail": "This is a single webpage applicatin",
-      "image": "https://imgur.com/rJpeSDL.png"
+      "detail": "This is a single web app built with MERN stack. It provides server side API and high performance front-end rendering. Redux makes managing data state of the front-end easy. It also includes unit-testing and code checking for sustainable development. ",
+      "image": "https://imgur.com/rJpeSDL.png",
+      "url": "https://github.com/pondycrane/personal_blog"
     }
 	]
 }
