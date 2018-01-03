@@ -16,5 +16,5 @@ export default combineReducers({
   posts,
   intl,
   about,
-  calendar
+  calendar,
 });
