@@ -25,6 +25,11 @@ export function Header(props, context) {
               Blog
             </Link>
           </li>
+          <li>
+            <Link to={'/calendar/'}>
+              CryptoCalendar
+            </Link>
+          </li>
           <li><FormattedMessage id="switchLanguage" /></li>
           {languageNodes}
         </ul>

@@ -47,5 +47,13 @@ export default (
         });
       }}
     />
+    <Route
+      path="/calendar"
+      getComponent={(nextState, cb) => {
+        require.ensure([], require => {
+          cb(null, require('./modules/Calendar/Calendar').default);
+        });
+      }}
+    />
   </Route>
 );
