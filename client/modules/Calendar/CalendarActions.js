@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-fetch';
 
 export const ADD_SCHEDULE = 'ADD_SCHEDULE';
+export const IS_LOADING = 'IS_LOADING';
 
 export function callCalendar() {
   return fetch('http://104.236.36.69:5000/', {
@@ -27,8 +28,15 @@ export function addSchedule(schedule) {
   };
 }
 
+export function isLoading() {
+  return {
+    type: IS_LOADING,
+  };
+}
+
 export function fetchCalendar() {
   return (dispatch) => {
+    dispatch(isLoading());
     return callCalendar().then(res => {
       dispatch(addSchedule(res.data));
     });
