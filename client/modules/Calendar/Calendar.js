@@ -9,6 +9,7 @@ import Avatar from 'material-ui/Avatar';
 import { Grid } from 'material-ui';
 import compose from 'recompose/compose';
 import { withStyles } from 'material-ui/styles';
+import Dialog, { DialogTitle, DialogContent } from 'material-ui/Dialog';
 
 const styles = () => ({
   gridItem: {
@@ -33,11 +34,30 @@ const styles = () => ({
       backgroundColor: '#D6EAF8',
     },
   },
+  screenshot: {
+    width: '100%',
+    position: 'center',
+  },
 });
 
 class Calendar extends Component {
+  state = {
+    screenshotOpen: false,
+    screenshot: '',
+  }
+
   componentDidMount() {
     this.props.dispatch(fetchCalendar());
+  }
+
+  openScreenshot(screenshot) {
+    if (screenshot) {
+      this.setState({ screenshotOpen: true, screenshot });
+    }
+  }
+
+  handleClose() {
+    this.setState({ screenshotOpen: false, screenshot: null });
   }
 
   render() {
@@ -58,12 +78,26 @@ class Calendar extends Component {
                       onClick={() => (!even.Source ? null : window.open(even.Source, '_blank'))}
                       className={`${classes.cardHeader} ${!even.Source ? '' : classes.pointed}`}
                     />
-                    <CardMedia className={classes.cardMedia} image={!even.Screenshot ? null : even.Screenshot} />
+                    <CardMedia
+                      className={`${classes.cardMedia} ${!even.Screenshot ? '' : classes.pointed}`}
+                      image={!even.Screenshot ? null : even.Screenshot}
+                      onClick={() => this.openScreenshot(even.Screenshot)}
+                    />
                   </Card>
                 </Grid>
               )
             }
           </Grid>
+          <Dialog
+            onClose={() => this.handleClose()}
+            open={this.state.screenshotOpen}
+            aria-labelledby="responsive-dialog-title"
+          >
+            <DialogTitle id="responsive-dialog-title">Screenshot</DialogTitle>
+            <DialogContent>
+              <img src={this.state.screenshot} className={classes.screenshot} role="presentation" />
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     );
