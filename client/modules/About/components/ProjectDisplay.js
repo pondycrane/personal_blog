@@ -70,9 +70,18 @@ class ProjectDisplay extends Component {
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit >
             <CardContent>
-              <Typography component="p">
-                {this.props.data.detail}
-              </Typography>
+              {
+                this.props.data.detail.map((dt, dInd) => {
+                  return (
+                    <div>
+                      <Typography key={dInd} component="p">
+                        {dt}
+                      </Typography>
+                      <br />
+                    </div>
+                  );
+                })
+              }
             </CardContent>
           </Collapse>
         </Card>

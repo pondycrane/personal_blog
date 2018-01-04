@@ -23,14 +23,21 @@
 			"name": "Hotspot Chat",
 			"year": "2014",
 			"description": "An Android messaging app that doesn't require the internet",
-			"detail": "HotspotChat communicates with nearby devices using the wifi names of Android devices. User can send short messages easily without the need of Internet connection. The message is encrypted using symmetrical encryption algorithm so that non-users can't intercept the message with Wifi scan. This application has been used by people in countries like Iraq, Iran, Myanmar, and India where The Internet hasn't been widely available. ",
+			"detail": [
+        "HotspotChat communicates with nearby devices using the wifi names of Android devices. ",
+        "User can send short messages easily without the need of Internet connection. The message is encrypted using symmetrical encryption algorithm so that non-users can't intercept the message with Wifi scan. ",
+        "This application has been used by people in countries like Iraq, Iran, Myanmar, and India where The Internet hasn't been widely available. "
+      ],
       "image": "https://i.imgur.com/iIFxkuV.png",
       "url": "https://play.google.com/store/apps/details?id=gooday.pondycrane.hotspotchat&hl=en&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dgoogle+play+hotspotchat&pcampaignid=APPU_1_inZEWp6TBIHM0AS1qaPIAg"
 		},
 		{ "name": "Simple Blockchain",
 			"year": "2017",
 			"description": "A simple blockchain that provides Proof-of-work",
-			"detail": "This is a Blockchain demo written in Java. It allows users to store data with certification. If a user is authenticated successfully, the user is able to append a block of data to the blockchain following the proof-of-work in finding a valid hash nonce. User can also validate the blockchain by checking its consistency. This blockchain doesn't include peer-to-peer network, yet. ",
+			"detail": [
+        "This is a Blockchain demo written in Java. It allows users to store data with certification. ",
+        "If a user is authenticated successfully, the user is able to append a block of data to the blockchain following the proof-of-work in finding a valid hash nonce. ",
+        "User can also validate the blockchain by checking its consistency. This blockchain doesn't include peer-to-peer network, yet. "],
 			"image": "https://imgur.com/NyE3y6F.png",
       "url": "https://github.com/pondycrane/DS_Project3Task3"
 		},
@@ -38,7 +45,11 @@
 			"name": "Lunchwhat Lunch Ordering Platform",
 			"year": "2014",
 			"description": "An lunch order platform built using Meteor.js",
-			"detail": "I built this tool to help my college organize daily lunch order for the whole company. Managing each people's lunch fund has never been easier. Employees can add credit to the MongoDB for lunch order. The app shows the balance of each user and their order history. App administrator can update daily menu to allow other users make orders. Furthermore, the app provides a chat room in case that users have any questions regarding to the menu. ",
+			"detail": [
+        "I built this tool to help my college organize daily lunch order for the whole company. Managing each people's lunch fund has never been easier. ",
+        "Employees can add credit to the MongoDB for lunch order. The app shows the balance of each user and their order history. App administrator can update daily menu to allow other users make orders. ",
+        "Furthermore, the app provides a chat room in case that users have any questions regarding to the menu. "
+      ],
 			"image": "https://imgur.com/nYdvsr5.png",
       "url": "https://github.com/pondycrane/lunchTime"
 		},
@@ -46,9 +57,24 @@
       "name": "Personal Website",
       "year": "2017",
       "description": "A web blog and profile website made using MERN stack",
-      "detail": "This is a single web app built with MERN stack. It provides server side API and high performance front-end rendering. Redux makes managing data state of the front-end easy. It also includes unit-testing and code checking for sustainable development. ",
+      "detail": [
+        "This is a single web app built with MERN stack. It provides server side API and high performance front-end rendering. ",
+        "Redux makes managing data state of the front-end easy. It also includes unit-testing and code checking for sustainable development. "
+      ],
       "image": "https://imgur.com/rJpeSDL.png",
       "url": "https://github.com/pondycrane/personal_blog"
+    },
+    {
+      "name": "Cryptocurrency Calendar",
+      "year": "2018",
+      "description": "A webpage to search for important crypto dates",
+      "detail": [
+        "The page displays the data stored in a private Google Sheet. ",
+        "A python server is serving the data through a Flask API, and the front-end webpage provides the interface required for searching and navigation. ",
+        "Crypto investors can take adventage of this website to invest beforehand. "
+      ],
+      "image": "https://imgur.com/d2HlCTw.png",
+      "url": "http://www.pondycrane.com/calendar"
     }
 	]
 }

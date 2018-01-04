@@ -75,6 +75,8 @@ class Calendar extends Component {
 
     return (
       <div className={classes.calendarView}>
+        <div className="search">
+        </div>
         {
           !this.props.loading ?
             <div className="scheduleView">
