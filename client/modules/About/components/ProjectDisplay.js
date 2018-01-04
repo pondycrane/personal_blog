@@ -73,8 +73,8 @@ class ProjectDisplay extends Component {
               {
                 this.props.data.detail.map((dt, dInd) => {
                   return (
-                    <div>
-                      <Typography key={dInd} component="p">
+                    <div key={dInd}>
+                      <Typography component="p">
                         {dt}
                       </Typography>
                       <br />

@@ -36,7 +36,7 @@ function AboutDisplay(props) {
   return (
     <div className={classes.root}>
       <Grid container spacing={8} >
-        <Grid item xs={12} sm={4} className={classes.gridItem}>
+        <Grid item xs={12} sm={12} md={4} className={classes.gridItem}>
           <Card>
             <CardMedia
               className={classes.media}
@@ -44,11 +44,11 @@ function AboutDisplay(props) {
             />
           </Card>
         </Grid>
-        <Grid item xs={12} sm={4} className={classes.gridItem}>
+        <Grid item xs={12} sm={12} md={4} className={classes.gridItem}>
           <Typography type="headline" component="h2">Biography</Typography>
           <Typography component="p">{props.about.biography}<br /></Typography>
         </Grid>
-        <Grid item xs={12} sm={4} className={classes.gridItem}>
+        <Grid item xs={12} sm={12} md={4} className={classes.gridItem}>
           <Typography type="headline" component="h2"> Blog Posts</Typography>
           {
             props.posts.map((post, pid) => {
@@ -82,7 +82,7 @@ function AboutDisplay(props) {
       {
         props.about.projects.map((project, id) => {
           return (
-            <Grid item xs={12} key={id} sm={4} className={classes.gridItem}>
+            <Grid item xs={12} key={id} sm={12} md={4} className={classes.gridItem}>
               <ProjectDisplay
                 data={project}
               />
