@@ -30,7 +30,6 @@ export function Header(props, context) {
               CryptoCalendar
             </Link>
           </li>
-          <li><FormattedMessage id="switchLanguage" /></li>
           {languageNodes}
         </ul>
       </div>

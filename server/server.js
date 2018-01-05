@@ -60,6 +60,7 @@ app.use('/api', posts);
 // Render Initial HTML
 const renderFullPage = (html, initialState) => {
   const head = Helmet.rewind();
+  const meta = '<meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1">';
 
   // Import Manifests
   const assetsManifest = process.env.webpackAssets && JSON.parse(process.env.webpackAssets);
@@ -72,6 +73,7 @@ const renderFullPage = (html, initialState) => {
         ${head.base.toString()}
         ${head.title.toString()}
         ${head.meta.toString()}
+        ${meta}
         ${head.link.toString()}
         ${head.script.toString()}
 
