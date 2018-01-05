@@ -8,7 +8,6 @@ const styles = theme => ({
     marginTop: theme.spacing.unit,
   },
   table: {
-    minWidth: 80,
   },
 });
 

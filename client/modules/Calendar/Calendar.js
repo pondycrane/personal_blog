@@ -9,7 +9,6 @@ import Avatar from 'material-ui/Avatar';
 import { Grid } from 'material-ui';
 import compose from 'recompose/compose';
 import { withStyles } from 'material-ui/styles';
-import Dialog, { DialogTitle, DialogContent } from 'material-ui/Dialog';
 
 import { CircularProgress } from 'material-ui/Progress';
 import { green } from 'material-ui/colors';
@@ -51,23 +50,14 @@ const styles = () => ({
 });
 
 class Calendar extends Component {
-  state = {
-    screenshotOpen: false,
-    screenshot: '',
-  }
-
   componentDidMount() {
     this.props.dispatch(fetchCalendar());
   }
 
   openScreenshot(screenshot) {
     if (screenshot) {
-      this.setState({ screenshotOpen: true, screenshot });
+      window.open(screenshot, '_blank');
     }
-  }
-
-  handleClose() {
-    this.setState({ screenshotOpen: false, screenshot: null });
   }
 
   render() {
@@ -102,16 +92,6 @@ class Calendar extends Component {
                   )
                 }
               </Grid>
-              <Dialog
-                onClose={() => this.handleClose()}
-                open={this.state.screenshotOpen}
-                aria-labelledby="responsive-dialog-title"
-              >
-                <DialogTitle id="responsive-dialog-title">Screenshot</DialogTitle>
-                <DialogContent>
-                  <img src={this.state.screenshot} className={classes.screenshot} role="presentation" />
-                </DialogContent>
-              </Dialog>
             </div>
           :
             <div className={classes.loading}>
