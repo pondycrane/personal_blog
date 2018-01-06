@@ -9,6 +9,9 @@ const styles = theme => ({
   },
   table: {
   },
+  cell: {
+    padding: 10,
+  },
 });
 
 const cols = ['name', 'year', 'specialty'];
@@ -21,7 +24,7 @@ function SkillDisplay(props) {
       <TableHead>
         <TableRow>
         {
-          cols.map((col, id) => { return <TableCell key={id}>{col}</TableCell>; })
+          cols.map((col, id) => { return <TableCell key={id} className={classes.cell} >{col}</TableCell>; })
         }
         </TableRow>
       </TableHead>
@@ -31,7 +34,7 @@ function SkillDisplay(props) {
             return (
               <TableRow key={lid}>
                 {
-                  cols.map((col, id) => { return <TableCell key={id}>{lang[col]}</TableCell>; })
+                  cols.map((col, id) => { return <TableCell key={id} className={classes.cell} >{lang[col]}</TableCell>; })
                 }
               </TableRow>
             );
