@@ -38,10 +38,10 @@
 }
 
 .language-switcher ul {
+  max-width: 980px;
   list-style: none;
-  width: 980px;
   margin: auto;
-  text-align: left;
+  text-align: center;
 }
 
 .language-switcher li {
